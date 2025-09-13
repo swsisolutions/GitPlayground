@@ -276,7 +276,7 @@ git push -f origin feature-branch (You'll need to force push because rebase rewr
 
 ## Add Image
 <img width="1024" height="1024" alt="rebase_flow" src="https://github.com/user-attachments/assets/1c3a7508-64ff-4153-8281-9ad4cf23c08c" />
-## Interactive Rebase (git rebase -i)
+### Interactive Rebase (git rebase -i)
 - This is an even more powerful version of rebase, allowing you to rewrite history in a very granular way. You can:
 
 ## Squash multiple commits into one.
