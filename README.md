@@ -49,8 +49,8 @@ git init
 ## 4. Checking Status
 - This command shows you the current state of your working directory and staging area.
 ```
-git status
-``
+  git status
+```
 ### It will tell you:
 - Which branch you're on.
 - Which files are untracked (new files not yet added to Git).
@@ -320,7 +320,6 @@ git push origin :refs/tags/v1.0: Delete a remote tag.
 ``` 
 ## 3. Git Reflog
 - The reflog (reference log) records almost every change to your HEAD pointer. It's a lifesaver if you accidentally git reset --hard or mess up a rebase, as it allows you to find lost commits.
-```
 - git reflog: Shows a history of where HEAD has been.
 - You can then use git reset --hard <reflog-entry> to go back to a specific state. For example, if you see HEAD@{5} was a good state, you could git reset --hard HEAD@{5}.
 
@@ -351,7 +350,6 @@ Lines starting with # are comments.
 ## 5. Git Cherry-pick
 ```
 git cherry-pick allows you to apply a single commit from one branch onto another branch.
-
 git cherry-pick <commit-hash>
 ```
 - This creates a new commit on your current branch that has the same changes as the original commit. Useful for:
