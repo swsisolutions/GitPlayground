@@ -1,7 +1,7 @@
 # GitPlayground
-Sample project to play around with git commands
+## How to maintain 2 git account
 - https://dzone.com/articles/managing-multiple-github-accounts
-
+- git remote set-url origin git@github.com-swsi:swsisolutions/ComposePlayGround.git
 ## What is Git?
 - Git is a distributed version control system. This means that instead of having a central server that holds the "master" copy of your code, every developer has a complete copy of the repository, including its full history.
 
@@ -320,7 +320,11 @@ git push origin v1.0: Push a specific tag to the remote.
 git push origin --tags: Push all tags to the remote.
 git tag -d v1.0: Delete a local tag.
 git push origin :refs/tags/v1.0: Delete a remote tag.
-``` 
+```
+## GIT REST
+- git reset --soft HEAD~4
+- git reset --hard HEAD~4
+
 ## 3. Git Reflog
 - The reflog (reference log) records almost every change to your HEAD pointer. It's a lifesaver if you accidentally git reset --hard or mess up a rebase, as it allows you to find lost commits.
 - git reflog: Shows a history of where HEAD has been.
