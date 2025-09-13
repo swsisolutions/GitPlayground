@@ -99,7 +99,11 @@ git log
 - git log -p: Shows the actual changes (diff) introduced by each commit.
 - git log --author="Your Name": Filter by author.
 - git log --grep="bug": Filter by commit message content.
-
+- git log --no-merges : it will display only commits not the merge commits.
+- git log <start_commits>..<end_commits> --no-merges --pretty=format:"%h - %an, %ar : %s" > commit_logs.txt
+- git log <start_commits>..HEAD --no-merges --pretty=format:"%h - %an, %ar : %s" > commit_logs.txt
+- git log --since="YYYY-MM-DD" --until="YYYY-MM-DD" --no-merges --pretty=format:"%h - %an, %ar : %s" > commit_logs.txt
+- git log --since="YYYY-MM-DD" --no-merges --pretty=format:"%h - %an, %ar : %s" > commit_logs.txt
 ## 8. Viewing Changes (Diff)
 - To see what changes have been made:
 ```
