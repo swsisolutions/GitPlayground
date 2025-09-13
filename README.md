@@ -158,14 +158,26 @@ git checkout main
 git pull origin main
 git merge featureA
 ```
+- example
 
+```
+git checkout main
+git pull origin main
+git merge feature/login-ui
+git push origin main
+```
 - Then, merge the feature branch into the current branch:
 - git merge <feature-branch-name>
 - Fast-forward Merge: If the target branch hasn't diverged (no new commits on main since you created feature-branch), Git simply moves the main pointer forward.
 - Three-way Merge: If both branches have new commits since the split, Git creates a new "merge commit" that combines the histories.
 add image
 <img width="1024" height="1024" alt="merge_branch" src="https://github.com/user-attachments/assets/299c17b3-d0ba-40a7-a44c-b2052a0719f9" />
-
+- **NOTE**
+- If there are merge conflicts, git will prompt you to resolve them manually
+- If you want to squash commits before merging, you can use
+```
+git merge --squash feature-branch-name
+```
 ## 6. Handling Merge Conflicts
 - Conflicts happen when Git can't automatically figure out how to combine changes from two branches (e.g., the same line of code was changed differently in both branches).
 - **When a conflict occurs:**
