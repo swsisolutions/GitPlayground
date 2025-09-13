@@ -19,7 +19,7 @@ Sample project to play around with git commands
 - **Master/Main:** The default or primary branch in most Git repositories.
 - **Head:** A pointer to the tip of the current branch.
 - **Remote:** A version of your repository hosted on the internet or network (e.g., GitHub, GitLab, Bitbucket).
-Let's visualize this workflow:
+- Let's visualize this workflow:
 - <img width="1024" height="1024" alt="git_workflow" src="https://github.com/user-attachments/assets/71d86d67-5d4c-4def-848f-cf5bfc4f8f78" />
 
 ## Git Basics - Getting Started
