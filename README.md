@@ -24,7 +24,6 @@ Sample project to play around with git commands
 
 ## Git Basics - Getting Started
 - Now, let's dive into some essential commands to get you up and running.
-
 ## 1. Installing Git
 - First, make sure Git is installed on your system.
 - **Windows:** Download from git-scm.com
