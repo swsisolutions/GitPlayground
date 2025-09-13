@@ -151,11 +151,14 @@ git checkout -b <new-branch-name>
 ```
 - This command creates a new branch AND immediately switches you to it.
 # 5. Merging Branches
-- When you've finished work on a feature branch, you'll want to integrate those changes back into another branch (e.g., main or master).
-- First, switch to the branch you want to merge into (the target branch):
+- When you've finished work on a feature branch(featureA), you'll want to integrate those changes back into another branch (e.g., main or master).
+- First, switch to the branch you want to merge into (the target branch - main/master):
 ```
 git checkout main
+git pull origin main
+git merge featureA
 ```
+
 - Then, merge the feature branch into the current branch:
 - git merge <feature-branch-name>
 - Fast-forward Merge: If the target branch hasn't diverged (no new commits on main since you created feature-branch), Git simply moves the main pointer forward.
